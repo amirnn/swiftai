@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Debug swiftai",
+      "program": "${workspaceFolder:swiftai}/.build/debug/swiftai",
+      "args": [],
+      "cwd": "${workspaceFolder:swiftai}",
+      "preLaunchTask": "swift: Build Debug swiftai"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Release swiftai",
+      "program": "${workspaceFolder:swiftai}/.build/release/swiftai",
+      "args": [],
+      "cwd": "${workspaceFolder:swiftai}",
+      "preLaunchTask": "swift: Build Release swiftai"
+    }
+  ]
+}
